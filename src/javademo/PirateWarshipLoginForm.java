@@ -21,9 +21,7 @@ public class PirateWarshipLoginForm extends JFrame {
         }
 
         invokeLater(() -> {
-            PirateWarshipLoginForm form = new PirateWarshipLoginForm();
-            form.setVisible(true);
-            form.setLocationRelativeTo(null);
+            new PirateWarshipLoginForm();
         });
     }
 
@@ -35,11 +33,12 @@ public class PirateWarshipLoginForm extends JFrame {
      * Create the frame.
      */
     public PirateWarshipLoginForm() {
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setVisible(true);
         setTitle("Pirate Warships");
         setBounds(new Rectangle(0, 0, 640, 400));
         setResizable(false);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPane = new JPanel();
         contentPane.setBounds(new Rectangle(0, 0, 640, 400));
@@ -84,7 +83,6 @@ public class PirateWarshipLoginForm extends JFrame {
         lblUser.setFont(new Font("Ariel", Font.BOLD, 14));
         lblUser.setText("<html><font color='black'>User:</font></html>");
         lblUser.setBounds(10, 66, 46, 14);
-
         contentPane.add(lblUser);
 
         passwordTextField = new JTextField();
@@ -93,7 +91,6 @@ public class PirateWarshipLoginForm extends JFrame {
         passwordTextField.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
         passwordTextField.setBounds(10, 137, 115, 20);
         passwordTextField.setColumns(10);
-
         contentPane.add(passwordTextField);
 
         JLabel lblPassword = new JLabel("");
