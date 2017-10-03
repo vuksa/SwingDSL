@@ -24,4 +24,5 @@ hs_err_pid*
 #User configuration
 .idea/vcs.xml
 .idea/
+out/
 *.iml
