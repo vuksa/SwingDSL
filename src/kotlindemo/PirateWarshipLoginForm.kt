@@ -25,9 +25,8 @@ class PirateWarshipLoginForm : JFrame() {
      * Create the frame.
      */
     init {
-        frame {
-            title = "Pirate Warships"
-            defaultCloseOperation = JFrame.DISPOSE_ON_CLOSE
+        frame(title = "Pirate Warships") {
+            defaultCloseOperation = JFrame.EXIT_ON_CLOSE
             bounds = rectangle(dimension = 640 x 400)
             isResizable = false
             isVisible = true

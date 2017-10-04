@@ -12,7 +12,8 @@ typealias Height = Int
 typealias CoordinateX = Int
 typealias CoordinateY = Int
 
-inline fun JFrame.frame(init: JFrame.() -> Unit): JFrame = apply {
+inline fun JFrame.frame(title: String = "", init: JFrame.() -> Unit): JFrame = apply {
+    this.title = title
     init()
 }
 
