@@ -29,7 +29,7 @@ public class PirateWarshipLoginForm extends JFrame {
      * Create the frame.
      */
     public PirateWarshipLoginForm() {
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setTitle("Pirate Warships");
         setBounds(new Rectangle(0, 0, 640, 400));
