@@ -16,7 +16,7 @@ inline fun JFrame.frame(init: JFrame.() -> Unit): JFrame = apply {
     init()
 }
 
-fun JFrame.panel(init: JPanel.() -> Unit): JPanel = JPanel().apply {
+inline fun JFrame.panel(init: JPanel.() -> Unit): JPanel = JPanel().apply {
     init()
 }.also { contentPane = it }
 
